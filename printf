@@ -1,0 +1,21 @@
+ /*  Write a program that uses printf to display the following picture on the screen :
+          *
+         *
+        *
+ *     * 
+  *   *
+    *
+ */
+ 
+ # include <stdio.h> // include standard library of input/output
+ 
+ int main ( void ) // void means no argument 
+  {
+  printf( "        *\n" ) ;
+  printf( "       *\n" ) ;
+  printf( "      *\n" ) ;
+  printf( "*    *\n" ) ;
+  printf( " *  *\n" ) ;
+  printf( "  *\n" ) ;
+      return 0;
+  }
