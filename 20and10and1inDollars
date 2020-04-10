@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int amount, bills;
+
+    printf("\nEnter a dollar amount: ");
+    scanf("%d", &amount);
+
+    bills = amount / 20;   /* Number of $20 bills needed */
+    printf("\n$20 bills: %d\n", bills);
+
+    amount = amount - (bills * 20);
+
+    bills = amount / 10;   /* Number of $10 bills needed */
+    printf("$10 bills: %d\n", bills);
+
+    amount = amount - (bills * 10);
+
+    bills = amount / 5;    /* Number of $5 bills needed */ 
+    printf(" $5 bills: %d\n", bills);
+
+    amount = amount - (bills * 5);
+
+    bills = amount / 1;    /* Number of $1 bills needed */
+    printf(" $1 bills: %d\n\n", bills);   
+
+    return 0;
+}
