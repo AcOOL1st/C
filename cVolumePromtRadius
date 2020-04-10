@@ -1,0 +1,24 @@
+/*
+Compute the volume of a sphere with a 10 meter radius 
+using the formula v = 4/3  * pi * r^3
+Promt user to enter radius 
+*/
+
+#include <stdio.h>
+
+#define PI 3.14159f
+#define  MULTI ( 4.0f/3.0f )
+
+int main(void) 
+{
+float volume , radius  ;
+
+printf (" Please enter the radius of sphere:");
+scanf ( " %f", &radius );
+
+volume = MULTI * PI * ( radius * radius * radius ) ;
+  
+  printf("The volume of a sphere with a %f radius is %.2f\n", radius,volume);    
+
+    return 0;
+}
